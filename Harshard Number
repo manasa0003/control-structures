@@ -1,0 +1,23 @@
+Program to check whether a number is a Harshad number or not (Niven number) is discussed here. Harshad Number is an integer that is divisible by the sum of its digits.
+
+Sample Input:
+
+1729
+
+ Sample Output:
+
+Harshad Number
+
+
+n=int(input())
+sum=0
+temp=n
+while n!=0:
+    sum=sum+(n%10)
+    n=n//10
+if(temp//sum==0):
+    print("Harshad Number")
+else:
+    print("Not Harshad Number")
+
+
